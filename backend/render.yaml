@@ -21,4 +21,4 @@ services:
       - key: EMAIL_PASS
         sync: false
       - key: FRONTEND_URL
-        value: https://waqar-743.github.io/Travel---Tour-site
+        value: https://waqar-743.github.io/Tour-to-Gilgit-Baltistan
