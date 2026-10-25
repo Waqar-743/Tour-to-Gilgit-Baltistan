@@ -6,7 +6,7 @@
 const { User } = require('../models');
 const { generateTokens, verifyRefreshToken } = require('../utils/jwtHelper');
 const { successResponse, createdResponse, errorResponse } = require('../utils/responseFormatter');
-const { sendWelcomeEmail, sendLoginNotificationEmail, sendPasswordResetEmail, sendEmailSafe } = require('../utils/emailService');
+const { sendWelcomeEmail, sendEmailVerificationEmail, sendLoginNotificationEmail, sendPasswordResetEmail, sendEmailSafe } = require('../utils/emailService');
 const { catchAsync } = require('../middleware/errorHandler');
 
 /**
@@ -75,7 +75,7 @@ const register = catchAsync(async (req, res) => {
               <div class="feature-item">🎫 Enjoy exclusive member discounts</div>
             </div>
             
-            <a href="${process.env.FRONTEND_URL || 'https://waqar-743.github.io/Travel---Tour-site'}" class="button">
+            <a href="${process.env.FRONTEND_URL || 'https://waqar-743.github.io/Tour-to-Gilgit-Baltistan'}" class="button">
               Start Exploring →
             </a>
             
